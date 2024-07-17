@@ -1,6 +1,4 @@
 def remover_coluna_missing(df, col_name, limite = 0.10):
-    print("OIIIIIIIIIIIIIIIIIIIII")
-    print("OLÁAAAAAAAAAAAAAAAAAA")
     if df[col_name].isna().mean() > limite:
         df = df.drop(columns = col_name)
     return df
