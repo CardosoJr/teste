@@ -5,7 +5,8 @@ def dropar_na(df, coluna, limite_dados_faltantes):
         df = df.dropna(subset=[coluna])
     return df
 
-def limpar_outlier(df, coluna): 
+def limpar_outlier(df, coluna):
+    print("OLAAAAAAAAAAAA")
     media = df[coluna].mean()
     dp = df[coluna].std()
     ls = media + 2*dp
